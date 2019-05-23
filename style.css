@@ -1,3 +1,4 @@
+/* switch button */
 .switch {
    -webkit-appearance:none;
    appearance: none;
@@ -27,4 +28,66 @@
  }
  .switch:checked:before {
    left: 32px;
+ }
+/* login form */
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f3f3f3;
+ }
+ form {
+   background-color: white;
+   padding: 10px 15px;
+   border-radius: 30px;
+   text-shadow: 0.4px 0.4px 5px rgba (0, 0, 0, 0.2);
+   box-shadow: 0.4px 4px 12px rgba (0, 0, 0, 0.2);
+ }
+ form h1 {
+   text-align: center;
+   font-size: 25px;
+   user-select: none;
+  }
+ .input-group {
+   margin: 10px;
+   position: relative;
+ }
+ form input {
+   border: none;
+   border-bottom: 1px solid dodgerblue;
+   outline: none;
+   padding: 6px 4px;
+ }
+ form lable {
+   position: absolute;
+   left: 0px;
+   top: 6px;
+   font-size: 13px;
+   pointer-events: none;
+   color: gray;
+   transition: 200ms;
+ }
+ input:focus + lable, input:valid + lable {
+   top: -10px;
+   left: -5px;
+   color: dodgerblue;
+ }
+ form button {
+   border: none;
+   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+ border-radius: 15px;
+   font-size: 15px;
+   padding: 5px;
+   margin: 5x;
+   width:100%;
+   color: white;
+   cursor: pointer;
+ }
+ form p {
+   font-size: 15px;
+   font-weight:400;
+}
+ form p a {
+   color: blue;
  }
